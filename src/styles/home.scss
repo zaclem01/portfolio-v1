@@ -155,6 +155,10 @@
 }
     .work_content_projectSlide {
         margin: 20px;
+
+        a {
+            text-decoration: none;
+        }
     }
         .projectSlide_img {
             width: $width_fullWidth;
