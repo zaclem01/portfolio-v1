@@ -3,7 +3,6 @@
 .siteNav {
     background: $color_white;
     border-bottom: 3px solid $color_lightGray;
-    border-bottom: 3px solid $color_lightGray;
     font-size: 1.6em;
     height: $height_siteNavHeight;
     left: 0;
@@ -67,6 +66,7 @@
     .js-responsive .siteNav_nav {
         background: $color_white;
         border-bottom: 2px solid $color_lightGray;
+        border-top: 2px solid $color_lightGray;
         display: block;
         float: left;
         left: 0;
