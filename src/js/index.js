@@ -57,7 +57,6 @@ $('.siteNav_menuBtn').on('click', function() {
 
 $('.work_content').slick({
     arrows: true,
-    dots: true,
     infinite: true,
     speed: 300,
     slidesToShow: 2,

@@ -5,7 +5,7 @@
 // Common Styling
 //
 .content {
-    margin-top: $height-siteNavHeight;
+    margin-top: $height_siteNavHeight;
 }
 
 .sectionName {
@@ -82,8 +82,6 @@
 .skills,
 .contact {
     background: $color_blue;
-    border-bottom: 4px solid $color_lightGray;
-    border-top: 4px solid $color_lightGray;
 }
     .skills_header_name,
     .contact_header_name {
@@ -103,7 +101,6 @@
 .about_content,
 .contact_content {
     display: flex;
-    justify-content: space-around;
     margin-top: $margin_sectionContentTop;
     width: 80%;
 }
@@ -218,6 +215,7 @@
 //
 .contact_content {
     align-items: flex-start;
+    justify-content: space-between;
 }
     .contact_content_email {
         flex: 0 1 60%;
@@ -282,9 +280,11 @@
     }
         .contact_content_social {
             flex-direction: row;
+            justify-content: space-between;
             margin-top: 5vh;
+            width: $width_fullWidth;
         }
-            .social_icon {
-                min-width: 25px;
+            .social_icon_img {
+                max-width: 75px;
             }
 }
