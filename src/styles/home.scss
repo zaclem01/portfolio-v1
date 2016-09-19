@@ -59,7 +59,7 @@
     flex-direction: column;
     min-height: $height_sectionHeight; // Make sure it takes up large portion of page
     justify-content: center;
-    padding: $padding_sectionTopBottom; // Vertical empty space in section
+    padding: $padding_section 0; // Vertical empty space in section
 }
 
 .work,
@@ -149,6 +149,7 @@
     }
 .work_content {
     background: rgba($color_lightGray, 0.2);
+    width: 90%;
 }
     .work_content_projectSlide {
         margin: 20px;
@@ -249,6 +250,7 @@
         display: flex;
         flex: 0 1 40%;
         flex-direction: column;
+        margin-top: 20px;
     }
         .social_icon {
             text-align: center;
@@ -260,9 +262,13 @@
 //
 // Mobile Styles
 //
-@media screen and (max-width: 420px) {
-    .work_content {
-        width: $width_fullWidth;
+@media screen and (max-width: 640px) {
+    .hero,
+    .work,
+    .skills,
+    .about,
+    .contact {
+        padding: 3vh;
     }
 
     .skill_icon {

@@ -9,21 +9,18 @@ let timedNavHide;
 // Hiding functionality for Nav
 // Only hide on non-mobile screens
 $(window).on('scroll', function() {
-    if ($(this).width() > 660) {
+    if ($(this).width() > 640) {
         let thisScroll = $(this).scrollTop();
         // Always show Nav when at the top of the page
         if (thisScroll < 100) {
             clearTimeout(timedNavHide);
             $siteNav.show();
-            console.log('showing nav: at top')
         // Hide Nav on scroll down
         } else if (thisScroll > lastScroll) {
             $siteNav.slideUp('fast');
-            console.log('hiding nav on scroll')
         // Show Nav on scroll up, but hide again after 2 seconds
         } else {
             $siteNav.slideDown('fast');
-            console.log('showing nav on scroll')
             clearTimeout(timedNavHide);
             timedNavHide = setTimeout(hideNav, 2000);
         }
@@ -53,6 +50,18 @@ const hideNav = () => $siteNav.slideUp('fast');
 
 $('.siteNav_menuBtn').on('click', function() {
     $siteNav.toggleClass('js-responsive');
+});
+
+// Highlight active section and scroll animation
+var $navItem = $('.siteNav_nav_item > a');
+
+$navItem.click(function(event) {
+	// Stop the default link navigation
+	event.preventDefault();
+
+	$('html, body').animate({
+		scrollTop: $('#' + $(this).text().toLowerCase() + 'Section').offset().top // Adjust for Top Bar
+	}, 500);
 });
 
 $('.work_content').slick({
