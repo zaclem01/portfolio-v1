@@ -72,8 +72,10 @@
         top: $height_siteNavHeight;
 
         .siteNav_nav_item {
+            border-left: 4px solid $color_orange;
             display: block;
             margin: 1vh 0;
+            padding-left: 10px;
             text-align: left;
         }
     }
