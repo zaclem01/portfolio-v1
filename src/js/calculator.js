@@ -117,9 +117,6 @@ var Calculator = {
   }
 };
 
-var calc = Object.create(Calculator);
-calc.create();
-
 // Recursive Descent Math Expression Parser
 // Modeled on and borrows heavily from
 // http://stackoverflow.com/questions/3422673/evaluating-a-math-expression-given-in-string-form
@@ -212,4 +209,9 @@ var Evaluator = {
     }
     return false;
   }
+}
+
+module.exports = function() {
+  var calc = Object.create(Calculator);
+  calc.create();
 }

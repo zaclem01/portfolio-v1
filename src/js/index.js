@@ -1,7 +1,7 @@
 const $ = require('jquery');
-const slick = require('./slick.js');
+const slick = require('./slick');
 const d3 = require('d3');
-require('./calculator.js');
+const calc = require('./calculator');
 
 const $siteNav = $('.siteNav');
 let lastScroll = 0;
@@ -82,4 +82,11 @@ $('.work_content').slick({
             }
         }
     ]
+});
+
+$(document).ready(function() {
+    if ($(location).attr('href') === 'http://zaclem01.github.io/calculator.html') {
+        console.log('calc page');
+        calc();
+    }
 });
