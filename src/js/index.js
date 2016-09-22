@@ -85,6 +85,7 @@ $('.work_content').slick({
 });
 
 $(document).ready(function() {
+    console.log($(location).attr('href'))
     if ($(location).attr('href') === 'http://zaclem01.github.io/calculator.html') {
         console.log('calc page');
         calc();
