@@ -1,0 +1,31 @@
+extends ./_base
+
+block content
+    div.content
+        div.projectHero.sectionContainer
+            h1.projectHero_header
+                block heroTitle
+            block heroImg
+        section.projectDesc.sectionContainer
+            header.projectDesc_header.u-centeredText
+                h1.projectDesc_header_name.sectionName Description
+                hr.projectDesc_header_divider.divider
+            div.projectDesc_content
+                div.projectDesc_content_overview
+                    p.u-emphasis Overview:
+                    block overview
+                div.projectDesc_content_sidebar
+                    div.sidebar_goals
+                        p.u-emphasis Goals:
+                        ul
+                            block goals
+                    div.sidebar_languages
+                        p.u-emphasis Languages/Frameworks Used:
+                        block languages
+        section.projectInfo.sectionContainer
+            header.projectInfo_header.u-centeredText
+                h1.projectInfo_header_name.sectionName
+                    block infoTitle
+                hr.projectInfo_header_divider.divider
+            div.projectInfo_content
+                block infoContent

@@ -1,8 +1,7 @@
-@import 'partials/_normalize';
+@import 'modules/_normalize';
 @import 'modules/_variables';
 @import 'slick';
 @import 'slick-theme';
-@import 'home';
 @import 'modules/_utils';
 
 @import url('https://fonts.googleapis.com/css?family=Oswald');
@@ -19,3 +18,53 @@ body {
     font-family: 'Oswald', sans-serif;
     position: relative;
 }
+
+.sectionContainer {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    min-height: $height_sectionHeight; // Make sure it takes up large portion of page
+    justify-content: center;
+    padding: $padding_section 0; // Vertical empty space in section
+}
+
+.sectionName {
+    font-size: $size_headerFont;
+    font-weight: bold;
+    margin: 0;
+}
+
+// Divider with circular ends
+.divider {
+    border-width: 1px;
+    border-style: solid;
+    margin: 20px auto;
+    position: relative;
+    width: 50vw;
+
+    &:before,
+    &:after {
+        border-width: 2px;
+        border-style: solid;
+        border-radius: 50%;
+        content: " ";
+        height: 10px;
+        position: absolute;
+        width: 10px;
+    }
+    &:before {
+        left: -15px;
+        top: -7px;
+    }
+    &:after {
+        right: -15px;
+        top: -7px;
+    }
+}
+
+.content {
+    margin-top: $height_siteNavHeight;
+}
+
+@import 'home';
+@import 'calculator';

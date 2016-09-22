@@ -2,12 +2,12 @@ extends templates/_base.pug
 
 block content
     div.content
-        div.hero
+        div.hero.sectionContainer
             div.hero_intro.u-centeredText
                 span.hero_intro_name Zac Clemans
                 hr.hero_intro_divider.divider
                 span.hero_intro_tagline.tagline Web Developer - Learner - Awesome Dude
-        section#workSection.work
+        section#workSection.work.sectionContainer
             header.work_header.u-centeredText
                 h1.work_header_name.sectionName Work
                 hr.work_header_divider.divider
@@ -26,10 +26,10 @@ block content
                         img.projectSlide_img(src=require("../images/recipe-box-screenshot.png"))
                         div.projectSlide_title Recipe Box
                 div.work_content_projectSlide
-                    a(href="http://codepen.io/thalpha/full/bwNzgY", target="_blank")
+                    a(href="./calculator.html")
                         img.projectSlide_img(src=require("../images/calc-screenshot.png"))
                         div.projectSlide_title OOLO Calculator
-        section#skillsSection.skills
+        section#skillsSection.skills.sectionContainer
             header.skills_header.u-centeredText
                 h1.skills_header_name.sectionName Skills
                 hr.skills_header_divider.divider
@@ -50,7 +50,7 @@ block content
                     img.skill_icon(src=require("../images/git-icon.png"))
                 div.skills_content_skill
                     img.skill_icon(src=require("../images/react-logo.svg"))
-        section#aboutSection.about
+        section#aboutSection.about.sectionContainer
             header.about_header.u-centeredText
                 h1.about_header_name.sectionName About Me
                 hr.about_header_divider.divider
@@ -66,7 +66,7 @@ block content
                         | playing video games with my fiance, or working out.
                 div.about_content_profileImg
                     img(src=require("../images/profile-image.jpg"))
-        section#contactSection.contact
+        section#contactSection.contact.sectionContainer
             header.contact_header.u-centeredText
                 h1.contact_header_name.sectionName Contact
                 hr.contact_header_divider.divider

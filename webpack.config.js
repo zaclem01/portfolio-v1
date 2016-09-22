@@ -30,6 +30,10 @@ const common = {
         new HTMLWebpackPlugin({
             filename: 'index.html',
             template: path.join(PATHS.views, 'home.pug')
+        }),
+        new HTMLWebpackPlugin({
+            filename: 'calculator.html',
+            template: path.join(PATHS.views, 'calculator.pug')
         })
     ],
     module: {

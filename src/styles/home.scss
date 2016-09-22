@@ -4,43 +4,6 @@
 //
 // Common Styling
 //
-.content {
-    margin-top: $height_siteNavHeight;
-}
-
-.sectionName {
-    font-size: $size_headerFont;
-    font-weight: bold;
-    margin: 0;
-}
-
-// Divider with circular ends
-.divider {
-    border-width: 1px;
-    border-style: solid;
-    margin: 20px auto;
-    position: relative;
-    width: 50vw;
-
-    &:before,
-    &:after {
-        border-width: 2px;
-        border-style: solid;
-        border-radius: 50%;
-        content: " ";
-        height: 10px;
-        position: absolute;
-        width: 10px;
-    }
-    &:before {
-        left: -15px;
-        top: -7px;
-    }
-    &:after {
-        right: -15px;
-        top: -7px;
-    }
-}
 
 .tagline {
     font-size: $size_taglineFont;
@@ -49,18 +12,6 @@
 //
 // Shared Section Styles
 //
-.hero,
-.work,
-.skills,
-.about,
-.contact {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    min-height: $height_sectionHeight; // Make sure it takes up large portion of page
-    justify-content: center;
-    padding: $padding_section 0; // Vertical empty space in section
-}
 
 .work,
 .about {

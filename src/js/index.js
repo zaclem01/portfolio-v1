@@ -1,6 +1,7 @@
 const $ = require('jquery');
 const slick = require('./slick.js');
 const d3 = require('d3');
+require('./calculator.js');
 
 const $siteNav = $('.siteNav');
 let lastScroll = 0;
@@ -57,7 +58,9 @@ var $navItem = $('.siteNav_nav_item > a');
 
 $navItem.click(function(event) {
 	// Stop the default link navigation
-	event.preventDefault();
+    if ($(location).attr('href') === 'http://zaclem01.github.io/') {
+        event.preventDefault();
+    }
 
 	$('html, body').animate({
 		scrollTop: $('#' + $(this).text().toLowerCase() + 'Section').offset().top // Adjust for Top Bar
@@ -66,6 +69,7 @@ $navItem.click(function(event) {
 
 $('.work_content').slick({
     arrows: true,
+    autoplay: true,
     infinite: true,
     speed: 300,
     slidesToShow: 2,

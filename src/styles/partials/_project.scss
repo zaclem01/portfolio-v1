@@ -1,0 +1,76 @@
+.projectHero {
+    background: $color_blue;
+    color: $color_white;
+    min-height: $height_heroHeight;
+    position: relative; // Otherwise triangle after will not position correctly
+
+    // Triangle after hero
+    &:after {
+        border-top: 10vh solid $color_blue;
+        border-left: 10vh solid transparent;
+        border-right: 10vh solid transparent;
+        content: " ";
+        position: absolute;
+        top: 100%;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        width: 0;
+    }
+}
+    .projectHero_img {
+        border: 4px solid $color_darkGray;
+        box-shadow: 10px 10px 5px 0 rgba(0, 0, 0, 0.75);
+        width: 50%;
+    }
+    .projectHero_header {
+        font-size: 5em;
+    }
+
+.projectDesc {
+    background: $color_white;
+}
+    .projectDesc_header_name {
+        color: $color_orange
+    }
+    .projectDesc_header_divider {
+        border-color: $color_orange;
+        &:before,
+        &:after {
+            border-color: $color_orange;
+        }
+    }
+    .projectDesc_content {
+        color: $color_darkGray;
+        margin-top: $margin_sectionContentTop;
+        width: 70%;
+    }
+        .projectDesc_content_overview {
+            float: left;
+            width: 60%;
+        }
+        .projectDesc_content_sidebar {
+            background: $color_lightGray;
+            border-radius: 5px;
+            box-sizing: border-box;
+            float: right;
+            padding: 0 10px 10px 10px;
+            width: 35%;
+        }
+
+.projectInfo {
+    background: $color_blue;
+}
+    .projectInfo_header_name {
+        color: $color_white;
+    }
+    .projectInfo_header_divider {
+        border-color: $color_white;
+        &:before,
+        &:after {
+            border-color: $color_white;
+        }
+    }
+    .projectInfo_content {
+        width: 80%;
+    }
