@@ -1,5 +1,17 @@
 @import 'partials/_project';
 
+.codeBtn {
+    background: $color_orange;
+    border: 0;
+    color: $color_white;
+    display: block;
+    height: 7vh;
+    line-height: 7vh;
+    margin-bottom: 5vh;
+    text-align: center;
+    width: 50%;
+}
+
 .calcBody {
     margin: 0 auto;
     max-width: 400px;
