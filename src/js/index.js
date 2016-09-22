@@ -58,7 +58,7 @@ var $navItem = $('.siteNav_nav_item > a');
 
 $navItem.click(function(event) {
 	// Stop the default link navigation
-    if ($(location).attr('href') === 'http://zaclem01.github.io/') {
+    if ($(location).attr('href') === 'https://zaclem01.github.io/') {
         event.preventDefault();
     }
 
@@ -86,7 +86,7 @@ $('.work_content').slick({
 
 $(document).ready(function() {
     console.log($(location).attr('href'))
-    if ($(location).attr('href') === 'http://zaclem01.github.io/calculator.html') {
+    if ($(location).attr('href') === 'https://zaclem01.github.io/calculator.html') {
         console.log('calc page');
         calc();
     }
