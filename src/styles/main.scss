@@ -66,5 +66,11 @@ body {
     margin-top: $height_siteNavHeight;
 }
 
+@media screen and (max-width: 640px) {
+    .sectionContainer {
+        padding: 3vh;
+    }
+}
+
 @import 'home';
 @import 'calculator';

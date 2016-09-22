@@ -25,21 +25,25 @@
     }
     .projectHero_header {
         font-size: 5em;
+        text-align: center;
     }
 
 .projectDesc {
     background: $color_white;
 }
-    .projectDesc_header_name {
-        color: $color_orange
+    .projectDesc_header {
+        margin-top: 10vh;
     }
-    .projectDesc_header_divider {
-        border-color: $color_orange;
-        &:before,
-        &:after {
-            border-color: $color_orange;
+        .projectDesc_header_name {
+            color: $color_orange
         }
-    }
+        .projectDesc_header_divider {
+            border-color: $color_orange;
+            &:before,
+            &:after {
+                border-color: $color_orange;
+            }
+        }
     .projectDesc_content {
         color: $color_darkGray;
         margin-top: $margin_sectionContentTop;
@@ -54,7 +58,7 @@
             border-radius: 5px;
             box-sizing: border-box;
             float: right;
-            padding: 0 10px 10px 10px;
+            padding: 5px 10px 10px 10px;
             width: 35%;
         }
 
@@ -74,3 +78,19 @@
     .projectInfo_content {
         width: 80%;
     }
+
+@media screen and (max-width: 640px) {
+    .projectDesc_content {
+        color: $color_darkGray;
+        margin-top: $margin_sectionContentTop;
+        width: 90%;
+    }
+        .projectDesc_content_overview {
+            float: none;
+            width: 100%;
+        }
+        .projectDesc_content_sidebar {
+            float: none;
+            width: 100%;
+        }
+}
