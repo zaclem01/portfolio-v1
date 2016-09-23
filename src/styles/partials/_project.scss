@@ -25,6 +25,7 @@
     }
     .projectHero_header {
         font-size: 5em;
+        margin: 0 5px;
         text-align: center;
     }
 
@@ -80,6 +81,12 @@
     }
 
 @media screen and (max-width: 640px) {
+    .projectHero_img {
+        border: 4px solid $color_darkGray;
+        box-shadow: 10px 10px 5px 0 rgba(0, 0, 0, 0.75);
+        width: 100%;
+    }
+
     .projectDesc_content {
         color: $color_darkGray;
         margin-top: $margin_sectionContentTop;
