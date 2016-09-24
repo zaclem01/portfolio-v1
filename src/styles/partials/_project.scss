@@ -79,18 +79,28 @@
     .projectInfo_content {
         width: 80%;
     }
+        .projectInfo_content_gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+            .gallery_img {
+                flex: 0 1 calc(100% / 3.2);
+                margin-top: 10px;
+
+                img {
+                    box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.75);
+                    width: 100%;
+                }
+            }
 
 @media screen and (max-width: 640px) {
     .projectHero_img {
-        border: 4px solid $color_darkGray;
-        box-shadow: 10px 10px 5px 0 rgba(0, 0, 0, 0.75);
         width: 100%;
     }
 
     .projectDesc_content {
-        color: $color_darkGray;
-        margin-top: $margin_sectionContentTop;
-        width: 90%;
+        width: 95%;
     }
         .projectDesc_content_overview {
             float: none;
@@ -102,6 +112,9 @@
         }
     
     .projectInfo_content {
-        width: 90%;
+        width: 95%;
     }
+        .gallery_img {
+            flex: 0 1 100%;
+        }
 }

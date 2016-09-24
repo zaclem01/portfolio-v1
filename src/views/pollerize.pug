@@ -1,0 +1,48 @@
+extends ./templates/_project
+
+block heroTitle 
+    | Pollerize - Voting App
+    
+block heroImg
+    img.projectHero_img(src=require("../images/pollerize-hero.png"))
+
+block overview
+    p 
+        | Pollerize was the first full-stack application that I built using
+        | the MERN stack (MongoDB, Express JS, React JS, and Node JS).
+        | Besides the basic MERN stack, I used React-Router for all page routes,
+        | Heroku to deploy the live application, and Passport JS for authentication.
+    p
+        | When serving the application, I used React's isomorphic rendering to serve a SPA (single page application)
+        | with multiple views for voting, managing the account, viewing all polls, etc.
+        
+    p
+        | My biggest takeaway from creating Pollerize was that planning out your application
+        | from the very beginning is immensely helpful in ensuring that the final product
+        | is a cohesive whole. While there are still some minor issues with the implementation,
+        | I feel that this project really helped in developing my understanding of a full stack development.
+    a.codeBtn(href="http://pollerize.herokuapp.com/", target="_blank") See live app
+    a.codeBtn(href="https://github.com/zaclem01/voting-app", target="_blank") See the code
+
+block goals
+    li Learn how to coordinate server and client side exchange of information.
+    li Create a fully functioning voting application with user accounts with management and poll voting, creation, browsing, and management.
+    li Serve isomorphic voting application and API endpoints with Express/Node JS.
+    li Use React JS and React-Router to create a voting SPA with client side navigation.
+    li Store encrypted user data and poll data with MongoDB and Mongoose.
+    li Authenicate users with Passport JS.
+
+block languages
+    p JavaScript, HTML, CSS
+    p MongoDB, Express JS, React JS, Node JS
+    p Passport JS, React-Router, Mongoose
+
+block infoTitle 
+    | Pollerize Gallery
+
+block infoContent
+    div.projectInfo_content_gallery
+        - for(var i = 1; i <= 6; i++) {
+            div.gallery_img
+                img(src=require("../images/pollerize-gal-" + i + ".png"))
+        - }

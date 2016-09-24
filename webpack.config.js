@@ -34,6 +34,10 @@ const common = {
         new HTMLWebpackPlugin({
             filename: 'calculator.html',
             template: path.join(PATHS.views, 'calculator.pug')
+        }),
+        new HTMLWebpackPlugin({
+            filename: 'pollerize.html',
+            template: path.join(PATHS.views, 'pollerize.pug')
         })
     ],
     module: {
