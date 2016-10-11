@@ -1,0 +1,58 @@
+extends ./templates/_project
+
+block heroTitle 
+    | Fullmetal Photography Website (WIP)
+    
+block heroImg
+    img.projectHero_img(src=require("../images/fullmetal-hero.png"))
+
+block overview
+    p 
+        | The Fullmetal Photography website is currently under construction
+        | for a client with a small photography startup in need of an online presence.
+        | The entire layout and functionality are being created from scratch, and I
+        | am working with a designer to create a unique look for the site (unimplemented at present).
+
+    p
+        | The site is being built as a WordPress theme, allowing the client to have complete
+        | control over the content that is presented on the site. This includes custom fields
+        | for editing content on the front page and page templates, a nav menu walker for
+        | nav menu creation, and several action hooks to modify loaded scripts, css, and inline styles.
+
+    p
+        | Besides WordPress, the site is being developed using Sass CSS preprocessing language, 
+        | Gulp task runners for several tasks (JS bundling, Sass compilation, image minification, etc.),
+        | and git to control version histories.
+    
+    p
+        | Working on this project has given me a much more insight into how powerful WordPress can
+        | be as a content management system. I also enjoy using development tools such as Sass
+        | and Gulp in this environment, as it makes creating the theme templates much faster than
+        | the typical WordPress theme development process. In terms of soft skills, working with both
+        | a client and designer has allowed me to continue improving my communication skills.
+    a.codeBtn(href="http://fullmetalphoto.x10host.com/", target="_blank") See website (WIP)
+    a.codeBtn(href="https://github.com/zaclem01/fullmetal-wp-theme", target="_blank") See the code
+
+block goals
+    li Create a business oriented website for a photography company.
+    li Work with designer to create a unique look and feel (in progress).
+    li Use WordPress as the CMS.
+    li Create controls that allow the client to completely customize content.
+    li Use Sass and Gulp in development environment.
+    li Work with client to implement any requests or revisions.
+
+block languages
+    p JavaScript, HTML, CSS
+    p WordPress, PHP
+    p Sass, Gulp, git
+
+block infoTitle 
+    | Fullmetal Website Gallery
+
+block infoContent
+    div.projectInfo_content_gallery
+        - for(var i = 1; i <= 6; i++) {
+            div.gallery_img
+                //- img(src=require("../images/pollerize-gal-" + i + ".png"))
+                img(src="http://lorempixel.com/600/600/technics/")
+        - }

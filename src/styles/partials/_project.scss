@@ -50,6 +50,10 @@
         color: $color_darkGray;
         margin-top: $margin_sectionContentTop;
         width: 70%;
+
+        .u-emphasis {
+            font-weight: normal;
+        }
     }
         .projectDesc_content_overview {
             float: left;

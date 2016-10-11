@@ -38,6 +38,10 @@ const common = {
         new HTMLWebpackPlugin({
             filename: 'pollerize.html',
             template: path.join(PATHS.views, 'pollerize.pug')
+        }),
+        new HTMLWebpackPlugin({
+            filename: 'fullmetal.html',
+            template: path.join(PATHS.views, 'fullmetal.pug')
         })
     ],
     module: {
